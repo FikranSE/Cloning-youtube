@@ -1,0 +1,161 @@
+.header{
+    width: 100%;
+    height:55px;
+    background:rgb(30, 30, 30);
+}
+.nav{
+    position:fixed;
+    width: 100%;
+    height:55px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(26, 26, 26, 0.962);
+    padding:0 16px;
+    z-index: 999;
+}
+
+.isi-nav-1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.toggle{
+    margin-right:20px;
+}
+.bi-list{
+    padding:8px;
+    font-size:29px;
+    color:white;
+}
+.bi-youtube{
+    font-size:31px;
+    color:rgb(219, 39, 39);
+    margin-right:3px;
+    margin-top:2px;
+}
+.logo{
+    display:flex;
+    align-items:center;
+}
+.logo h3{
+    font-size:22px;
+    color:rgb(233, 233, 233);
+    font-family:'roboto', monospace;
+    letter-spacing: -4px;
+}
+.isi-nav-2{
+    flex: 1;
+    margin-left:75px;
+    margin-right:35px;
+    max-width: 525px;
+    display:flex;
+    align-items:center;
+}
+
+.search-bar{
+    flex:1;
+    height:41px;
+    border-radius:3px;
+    padding:3px 6px;
+    background-color: rgb(18, 18, 18);
+    color:rgb(183, 183, 183);
+    border:1px solid rgb(36, 36, 36);;
+    box-shadow:inset 1px 2px 5px rgba(0, 0, 0, 0.582);
+    font-size:16px;
+    font-weight:bold;
+    font-family:Roboto,arial;
+    outline:none;
+    width:0;
+}
+.search-bar::placeholder {
+    font-size:18px;
+    font-weight:400;
+}
+.bi-search{
+    color:rgb(237, 237, 237);
+    font-size:15px;
+}
+.btn-search{
+    width:60px;
+    height:39px;
+    margin-left:-6px;
+    border:1px solid rgb(56, 56, 56);;
+    border-radius:1px;
+    background-color:rgb(26, 26, 26);
+    cursor:pointer;
+}
+
+.btn-mic{
+    padding:10px;
+    border:0;
+    background-color:rgb(20, 20, 20);
+    border-radius:50px;
+    cursor:pointer;
+    margin-left:8px;
+}
+.bi-mic-fill{
+    color:rgb(193, 193, 193);
+    font-size:19px;
+}
+.isi-nav-3{
+    width:225px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-shrink: 0;
+}
+.isi-nav-3 .bi{
+    color:rgb(197, 197, 197);
+    font-size:20px;
+    cursor:pointer;
+}
+.bi-bell{
+    position:relative;
+}
+.bi-bell::after{
+    content:'4';
+    width:15px;
+    height:15px;
+    position:absolute;
+    text-align: center;
+    left:11px;
+    font-family:roboto,arial;
+    font-size:11px;
+    font-weight:bold;
+    background-color:rgb(246, 44, 44);
+    border-radius:50px;
+}
+.profil-yt{
+    width:35px;
+    height:35px;
+    border-radius:50px;
+    background-image: url(p9.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width:668px){
+    .search-bar{
+        display:none;
+    }
+    .btn-search{
+        background:none;
+        border:0;
+    }
+    .btn-mic{
+        background:none;
+    }
+    .isi-nav-2{
+        justify-content: flex-end;
+        margin-right:0;
+    }
+}
+@media screen and (max-width:549px){
+    .btn-mic{
+        display:none;
+    }
+    .btn-search{
+        margin-right:-25px;
+    }
+}

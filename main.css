@@ -1,0 +1,58 @@
+main{
+    display:flex;
+}
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items:start;
+    background:rgba(26, 26, 26, 0.962);
+    width:240px;
+    padding-top:10px;
+}
+.sidebar .menu{
+    display:flex;
+    align-items:center;
+    width:90%;
+    height:42px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+
+.sidebar .menu i{
+    color:rgb(222, 222, 222);
+    font-size:20px;
+    padding:30px;
+}
+.sidebar .menu:hover{
+    background:rgba(14, 14, 14, 0.446);
+}
+.sidebar .menu span{
+    color:rgb(208, 208, 208);
+    font-family:roboto,arial;
+    font-size:15px;
+}
+.out-container{
+    flex:1;
+}
+
+/* js */
+.size-sidebar{
+    width:80px;
+}
+
+.menu-js{
+    flex-direction: column;
+    width:100%;
+}
+
+.menu-a{
+    font-size:10px;
+}
+
+
+
+
+
+
